@@ -14,21 +14,29 @@ class ClienteFisico(Cliente):
 
     @cpf.setter
     def cpf(self, cpf):
+
         # tira os pontos e o traço do cpf
         cpf = re.sub('[^0-9]', '', cpf)
 
         # pega os primeiros nove digitos do cpf
         novo_cpf = cpf[:9]
+
+
         # verifica se os 9 primeiros digitos são iguais
         sequencia = cpf[0] * len(novo_cpf)
         if sequencia == novo_cpf:
-            self._cpf = False
+            raise ValueError('CPF invalido')
 
-        cpf = self.valida_cpf(novo_cpf)
-        cpf = self.valida_cpf(cpf)
-        print(cpf)
+        # efetua a validação com base nos dois ultimos digitos, utilizando a função valida_cpf.
+        cpf_validado = self.valida_cpf(novo_cpf)
+        cpf_validado = self.valida_cpf(cpf_validado)
 
-        self._cpf = cpf
+        if cpf == cpf_validado:
+            self._cpf = cpf_validado
+        else:
+            raise ValueError('CPF invalido')
+
+
 
     @property
     def sexo(self):

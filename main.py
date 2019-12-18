@@ -8,7 +8,7 @@
 from cliente_fisico import ClienteFisico
 
 
-cf = ClienteFisico('david', '10/02/2018', '413.717.708-24', 'm')
+cf = ClienteFisico('david', '10/02/2018', '060.433.835-00', 'm')
 
 print(cf.nome, type(cf.data_cadastro), cf.cpf, cf.sexo)
 
