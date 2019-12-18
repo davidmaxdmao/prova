@@ -25,7 +25,7 @@ class ClienteFisico(Cliente):
         # verifica se os 9 primeiros digitos são iguais
         sequencia = cpf[0] * len(novo_cpf)
         if sequencia == novo_cpf:
-            raise ValueError('CPF invalido')
+            raise ValueError('CPF invalido!')
 
         # efetua a validação com base nos dois ultimos digitos, utilizando a função valida_cpf.
         cpf_validado = self.valida_cpf(novo_cpf)
@@ -34,7 +34,7 @@ class ClienteFisico(Cliente):
         if cpf == cpf_validado:
             self._cpf = cpf_validado
         else:
-            raise ValueError('CPF invalido')
+            raise ValueError('CPF invalido!')
 
 
     @property
