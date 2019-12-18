@@ -1,0 +1,23 @@
+[33mcommit 1a14c67ddb0cb06ca6a9b14be8ff375d75fff6de[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: david max <davidmax.dmao@gmail.com>
+Date:   Wed Dec 18 15:46:23 2019 -0300
+
+    A verificaçõ(só permitir letras e espaços em branco) do nome na classe cliente ja está funcionando
+
+[33mcommit 19838c5fe17c9e0a7710c06943da774d1c825513[m
+Author: david max <davidmax.dmao@gmail.com>
+Date:   Wed Dec 18 14:49:14 2019 -0300
+
+    o cnmpj já está sendo validado
+
+[33mcommit c1db19765a22095f300d829a4e5d1ccfe63baffb[m
+Author: david max <davidmax.dmao@gmail.com>
+Date:   Wed Dec 18 14:28:22 2019 -0300
+
+    O cpf já está sendo validado.
+
+[33mcommit 33d344596387bab5ba1fcb5e3a1a96b511acea44[m
+Author: david max <davidmax.dmao@gmail.com>
+Date:   Wed Dec 18 13:57:42 2019 -0300
+
+    primeiro commit, classes criadas e validando o cpf, só não está lançando a exceção
