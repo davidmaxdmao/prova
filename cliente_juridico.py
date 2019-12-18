@@ -1,4 +1,5 @@
 from cliente import Cliente
+from pycpfcnpj import cpfcnpj
 
 class ClienteJuridico(Cliente):
 
@@ -13,4 +14,8 @@ class ClienteJuridico(Cliente):
 
     @cnpj.setter
     def cnpj(self, cnpj):
-        self._cnpj = cnpj
+
+        if cpfcnpj.validate(cnpj):
+            self._cnpj = cnpj
+        else:
+            raise ValueError('CNPJ invalido!')

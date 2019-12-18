@@ -6,11 +6,14 @@
 #o nome so pode conter letras e espaço em branco.
 
 from cliente_fisico import ClienteFisico
+from cliente_juridico import ClienteJuridico
 
 
-cf = ClienteFisico('david', '10/02/2018', '060.433.835-00', 'm')
+cf = ClienteFisico('david', '10/02/2018', '060.433.805-00', 'm')
+cj = ClienteJuridico('max', '10/01/2018', '11.444.777/0000-61')
 
 print(cf.nome, type(cf.data_cadastro), cf.cpf, cf.sexo)
+print(cj.nome, type(cj.data_cadastro), cj.cnpj)
 
 # from datetime import datetime
 

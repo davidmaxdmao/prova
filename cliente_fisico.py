@@ -37,7 +37,6 @@ class ClienteFisico(Cliente):
             raise ValueError('CPF invalido')
 
 
-
     @property
     def sexo(self):
         return self._sexo
@@ -47,7 +46,6 @@ class ClienteFisico(Cliente):
         self._sexo = sexo
 
     def valida_cpf(self, cpf):
-
 
         soma = 0
         for chave, multiplicador in enumerate(range(len(cpf) + 1, 1, -1)):
